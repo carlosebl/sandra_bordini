@@ -21,16 +21,18 @@
         gap: 24px;
 
         &__link {
-            background-color: variables.$textColor;
             text-decoration: none;
 
             &__card {
                 background-color: variables.$textColor;
                 display: block;
+                border: 1px solid variables.$textColor;
+                border-radius: 4px;
     
                 img {
                     text-align: center;
                     width: 100%;
+                    border-radius: 4px;
                 }
     
                 &__text {
@@ -42,6 +44,7 @@
                         background-color: variables.$textColor;
                         color: variables.$backgroundColor;
                         font-size: 40px;
+                        font-weight: bold;
                         line-height: 40px;
                         letter-spacing: 0.80px;
                     }
