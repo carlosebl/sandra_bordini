@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'header';
+@use 'description';
+@use 'about-me';
+@use 'info';
+
+@font-face {
+    font-family: PP Mori;
+    src: url(/src/fonts/pp_mori/ppmori-regular-webfont.woff);
+}
+
+* {
+    font-family: PP Mori, sans-serif;
+    list-style: none;
+    background-color: variables.$backgroundColor;
+}

@@ -1,0 +1,62 @@
+@use 'variables';
+
+.description {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &__text {
+        width: 848px;
+        padding: 96px 0;
+        font-size: 24px;
+        color: variables.$textColor;
+        line-height: 40px;
+        letter-spacing: 0.48px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &__link {
+            background-color: variables.$textColor;
+            text-decoration: none;
+
+            &__card {
+                background-color: variables.$textColor;
+                display: block;
+    
+                img {
+                    text-align: center;
+                    width: 100%;
+                }
+    
+                &__text {
+                    background-color: variables.$textColor;
+                    padding: 20px;
+
+                    h3 {
+                        margin: 0;
+                        background-color: variables.$textColor;
+                        color: variables.$backgroundColor;
+                        font-size: 40px;
+                        line-height: 40px;
+                        letter-spacing: 0.80px;
+                    }
+    
+                    p {
+                        padding-top: 16px;
+                        margin: 0;
+                        background-color: variables.$textColor;
+                        color: variables.$cardTextColor;
+                        font-size: 20px;
+                        line-height: 32px;
+                        letter-spacing: 0.40px;
+                    }
+                }
+            }
+        }
+    }
+}

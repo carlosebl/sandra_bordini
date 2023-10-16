@@ -1,0 +1,42 @@
+@use 'variables';
+
+.header {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: normal;
+        color: variables.$textColor;
+        margin: 0;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+
+        &__item {
+            margin: 0 12px;
+
+            &__link {
+                color: variables.$textColor;
+                text-decoration: none;
+
+                i {
+                    color: variables.$primaryColor;
+                    margin: 0 16px;
+                }
+            }
+        }
+    }
+}
