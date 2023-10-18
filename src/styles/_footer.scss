@@ -1,0 +1,31 @@
+@use 'variables';
+
+.footer {
+    padding: 80px 0;
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &__links {
+        display: block;
+
+        &__item {
+            display: block;
+            
+            &__link {
+                text-decoration: none;
+                color: variables.$textColor;
+                display: flex;
+                align-items: center;
+                width: 32px;
+
+                p {
+                    margin: 0;
+                    padding-left: 16px;
+                }
+            }
+        }
+    }
+}

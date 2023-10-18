@@ -1,0 +1,54 @@
+@use 'variables';
+
+.goodwork-presentation {
+    padding-top: 96px;
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+    }
+
+    &__titles {
+        width: 408px;
+        color: variables.$textColor;
+
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        }
+
+        img {
+            padding: 8px 0;
+        }
+
+        h3 {
+            width: 408px;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 56px;
+            letter-spacing: 0.96px;
+        }
+    }
+
+    &__text {
+        color: variables.$textColor;
+        padding-left: 360px;
+        padding-top: 32px;
+
+        p {
+            max-width: 628px;
+            height: 216px;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        }
+    }
+
+    &__image {
+        margin-top: 88px;
+        margin-left: 112px;
+        width: 100%;
+        height: 663px;
+    }
+}

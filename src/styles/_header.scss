@@ -12,11 +12,15 @@
         padding-bottom: 10px;
     }
 
-    &__title {
-        font-size: 32px;
-        font-weight: bold;
-        color: variables.$textColor;
-        margin: 0;
+    &__link {
+        text-decoration: none;
+
+        &__text {
+            font-size: 32px;
+            font-weight: bold;
+            color: variables.$textColor;
+            margin: 0;
+        }
     }
 
     &__menu {
