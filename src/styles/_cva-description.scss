@@ -1,0 +1,71 @@
+@use 'variables';
+
+.cva-description {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__text {
+            width: 408px;
+            color: variables.$textColor;
+            padding-top: 80px;
+
+            h3 {
+                font-size: 48px;
+                font-weight: bold;
+                line-height: 56px;
+                letter-spacing: 0.96px;
+            }
+    
+            p {
+                line-height: 24px;
+                letter-spacing: 0.32px;
+            }
+        }
+    }
+
+    &__images {
+        display: flex;
+        gap: 48px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__ci {
+        display: flex;
+        gap: 184px;
+
+        &__text {
+            width: 408px;
+            color: variables.$textColor;
+            padding-top: 160px;
+
+            h3 {
+                font-size: 48px;
+                font-weight: bold;
+                line-height: 56px;
+                letter-spacing: 0.96px;
+            }
+    
+            p {
+                line-height: 24px;
+                letter-spacing: 0.32px;
+            }
+        }
+
+        &__image {
+            padding-top: 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
