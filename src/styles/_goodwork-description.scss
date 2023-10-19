@@ -1,13 +1,13 @@
 @use 'variables';
 
 .goodwork-description {
-
+    overflow-x: hidden;
     .container {
-        max-width: 1440px;
+        max-width: 1280px;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 272px;
+        gap: 132px;
     }
 
     &__info {
@@ -35,8 +35,7 @@
         padding-top: 80px;
 
         &__image1 {
-            max-width: 736px;
-            width: 100%;
+            width: 744px;
         }
 
         &__image2 {
