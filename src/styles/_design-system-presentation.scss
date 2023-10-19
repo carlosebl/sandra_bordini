@@ -1,6 +1,6 @@
 @use 'variables';
 
-.goodwork-presentation {
+.design-system-presentation {
     padding-top: 96px;
 
     .container {
@@ -34,11 +34,11 @@
 
     &__text {
         color: variables.$textColor;
-        padding-left: 360px;
-        
+        padding-left: 240px;
+        padding-top: 32px;
 
         p {
-            max-width: 628px;
+            max-width: 408px;
             height: 216px;
             line-height: 24px;
             letter-spacing: 0.32px;
@@ -48,6 +48,5 @@
     &__image {
         margin-left: 112px;
         margin-top: 80px;
-        padding-top: 80px;
     }
 }
