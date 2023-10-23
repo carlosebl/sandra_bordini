@@ -29,6 +29,10 @@
         align-items: center;
         margin: 0;
 
+        @media (max-width: 767px) {
+            display: none;
+        }
+
         &__item {
             margin: 0 12px;
 
