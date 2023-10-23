@@ -8,25 +8,48 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 132px;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
     }
 
     &__info {
         color: variables.$textColor;
         width: 408px;
 
+        @media (max-width: 767px) {
+            width: 352px;
+        }
+
         &__text {
             padding-top: 80px;
+
+            @media (max-width: 767px) {
+                padding-top: 40px;
+            }
 
             h3 {
                 font-size: 48px;
                 font-weight: bold;
                 line-height: 56px;
                 letter-spacing: 0.96px;
+
+                @media (max-width: 767px) {
+                    font-size: 40px;
+                    letter-spacing: 0.80px;
+                }
             }
     
             p {
                 line-height: 24px;
                 letter-spacing: 0.32px;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.32px;
+                }
             }
         }
     }
@@ -34,13 +57,26 @@
     &__images {
         padding-top: 80px;
 
+        @media (max-width: 767px) {
+            padding-top: 40px;
+        }
+
         &__image1 {
             width: 744px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
         }
 
         &__image2 {
             width: 1234px;
             margin-top: 336px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-top: 40px;
+            }
         }
     }
 }
