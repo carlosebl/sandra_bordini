@@ -11,7 +11,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
 
@@ -20,7 +20,7 @@
             color: variables.$textColor;
             padding-top: 40px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
             }
 
@@ -30,7 +30,7 @@
                 line-height: 56px;
                 letter-spacing: 0.96px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     font-size: 40px;
                     letter-spacing: 0.80px;
                 }
@@ -47,14 +47,14 @@
         display: flex;
         gap: 24px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
 
         img {
             height: 608px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 100%;
                 height: auto;
                 margin-bottom: 16px;
@@ -66,7 +66,7 @@
         display: flex;
         gap: 184px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
 
@@ -75,7 +75,7 @@
             color: variables.$textColor;
             padding-top: 160px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
                 padding-top: 40px;
             }
@@ -86,7 +86,7 @@
                 line-height: 56px;
                 letter-spacing: 0.96px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     font-size: 40px;
                     letter-spacing: 0.80px;
                 }
@@ -97,7 +97,7 @@
                 line-height: 24px;
                 letter-spacing: 0.32px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     width: 352px;
                 }
             }
@@ -106,14 +106,14 @@
         &__image {
             padding-top: 80px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 padding-top: 40px;
             }
 
             img {
                 height: 768px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     width: 100%;
                     height: auto;
                 }

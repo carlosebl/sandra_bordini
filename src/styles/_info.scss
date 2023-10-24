@@ -8,7 +8,7 @@
         padding-top: 76px;
         padding-bottom: 80px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
             width: 100%;
             padding-top: 44px;
@@ -31,7 +31,7 @@
             background-color: variables.$tagColor;
             border-radius: 10px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 height: 32px;
                 padding: 4px 12px;
                 margin-right: 16px;
@@ -49,7 +49,7 @@
                 letter-spacing: 0.48px;
                 text-wrap: nowrap;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     font-size: 16px;
                     letter-spacing: 0.32px;
                 }
@@ -61,7 +61,7 @@
         padding-left: 240px;
         margin: 0;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             padding-left: 0;
             margin-top: 40px;
         }

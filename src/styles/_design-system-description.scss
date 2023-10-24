@@ -4,7 +4,7 @@
     padding-top: 80px;
     overflow-x: hidden;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
         padding-top: 40px;
     }
 
@@ -14,7 +14,7 @@
         display: flex;
         gap: 240px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
     }
@@ -29,7 +29,7 @@
             line-height: 56px;
             letter-spacing: 0.96px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
                 font-size: 40px;
                 letter-spacing: 0.80px;
@@ -42,7 +42,7 @@
             line-height: 24px;
             letter-spacing: 0.32px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
             }
         }
@@ -51,7 +51,7 @@
     &__image {
         margin-left: 112px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             margin: 0;
             width: 100%;
         }
@@ -61,7 +61,7 @@
         display: flex;
         gap: 184px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
 
@@ -70,7 +70,7 @@
             color: variables.$textColor;
             padding-top: 80px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
                 padding-top: 40px;
             }
@@ -81,7 +81,7 @@
                 line-height: 56px;
                 letter-spacing: 0.96px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     font-size: 40px;
                     letter-spacing: 0.80px;
                 }
@@ -92,7 +92,7 @@
                 line-height: 24px;
                 letter-spacing: 0.32px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     width: 352px;
                 }
             }
@@ -101,14 +101,14 @@
         &__image {
             padding-top: 80px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 padding-top: 80px;
             }
 
             img {
                 height: 768px;
 
-                @media (max-width: 767px) {
+                @media (max-width: 1024px) {
                     width: 100%;
                     height: auto;
                 }

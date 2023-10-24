@@ -23,27 +23,110 @@
         }
     }
 
-    &__menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 0;
-
-        @media (max-width: 767px) {
+    &__desktop {
+        @media (max-width: 1024px) {
             display: none;
         }
 
-        &__item {
-            margin: 0 12px;
-
-            &__link {
-                color: variables.$textColor;
-                text-decoration: none;
-
-                i {
-                    color: variables.$primaryColor;
-                    margin: 0 16px;
+        &__menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+    
+            &__item {
+                margin: 0 12px;
+    
+                &__link {
+                    color: variables.$textColor;
+                    text-decoration: none;
+    
+                    i {
+                        color: variables.$primaryColor;
+                        margin: 0 16px;
+                    }
                 }
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: flex;
+
+            .hamburger {
+                position: fixed;
+                z-index: 100;
+                top: 1rem;
+                right: 1rem;
+                padding: 0 8px;
+                border: none;
+                cursor: pointer;
+                color: variables.$textColor;
+            }
+
+            .closeIcon {
+                display: none;
+            }
+
+            .menu {
+                position: fixed;
+                transform: translateY(-100%);
+                transition: transform 0.2s;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 99;
+                background-color: variables.$backgroundColor;
+                list-style: none;
+                padding-top: 4rem;
+
+                li {
+                    margin: 0;
+                    background-color: variables.$backgroundColor;
+
+                    a {
+                        background-color: variables.$backgroundColor;
+                        color: variables.$textColor;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+
+                &__top {
+                    margin: 0;
+                    padding: 0 4px;
+                    position: fixed;
+                    top: 16;
+                    display: flex;
+                    align-items: center;
+                    background-color: variables.$backgroundColor;
+                    width: 80%;
+
+                    li {
+                        background-color: variables.$backgroundColor;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: normal;
+                            margin-right: 48px;
+                            background-color: variables.$backgroundColor;
+                            color: variables.$textColor;
+
+                            b {
+                                
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .showMenu {
+                transform: translateY(0);
             }
         }
     }

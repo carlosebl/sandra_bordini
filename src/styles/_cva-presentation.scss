@@ -4,7 +4,7 @@
     padding-top: 96px;
     overflow-x: hidden;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
         padding-top: 40px;
     }
 
@@ -13,7 +13,7 @@
         width: 100%;
         display: flex;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             display: block;
         }
     }
@@ -22,7 +22,7 @@
         width: 408px;
         color: variables.$textColor;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             width: 352px;
         }
 
@@ -31,7 +31,7 @@
             line-height: 24px;
             letter-spacing: 0.32px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 font-size: 12px;
                 line-height: 20px;
                 letter-spacing: 0.24px;
@@ -49,7 +49,7 @@
             line-height: 56px;
             letter-spacing: 0.96px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 352px;
                 font-size: 40px;
                 font-weight: bold;
@@ -61,14 +61,14 @@
     &__image {
         margin-left: 24px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
             margin: 0;
         }
 
         img {
             height: 720px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1024px) {
                 width: 100%;
                 height: auto;
             }
