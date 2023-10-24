@@ -4,11 +4,19 @@
     padding-top: 80px;
     overflow-x: hidden;
 
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+
     .container {
         max-width: 1280px;
         width: 100%;
         display: flex;
         gap: 240px;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
     }
 
     &__text {
@@ -20,6 +28,12 @@
             font-weight: bold;
             line-height: 56px;
             letter-spacing: 0.96px;
+
+            @media (max-width: 767px) {
+                width: 352px;
+                font-size: 40px;
+                letter-spacing: 0.80px;
+            }
         }
 
         p {
@@ -27,41 +41,77 @@
             height: 216px;
             line-height: 24px;
             letter-spacing: 0.32px;
+
+            @media (max-width: 767px) {
+                width: 352px;
+            }
         }
     }
 
     &__image {
         margin-left: 112px;
+
+        @media (max-width: 767px) {
+            margin: 0;
+            width: 100%;
+        }
     }
 
     &__process {
         display: flex;
         gap: 184px;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &__text {
             width: 408px;
             color: variables.$textColor;
             padding-top: 80px;
+
+            @media (max-width: 767px) {
+                width: 352px;
+                padding-top: 40px;
+            }
 
             h3 {
                 font-size: 48px;
                 font-weight: bold;
                 line-height: 56px;
                 letter-spacing: 0.96px;
+
+                @media (max-width: 767px) {
+                    font-size: 40px;
+                    letter-spacing: 0.80px;
+                }
             }
     
             p {
                 width: 408px;
                 line-height: 24px;
                 letter-spacing: 0.32px;
+
+                @media (max-width: 767px) {
+                    width: 352px;
+                }
             }
         }
 
         &__image {
             padding-top: 80px;
 
+            @media (max-width: 767px) {
+                padding-top: 80px;
+            }
+
             img {
                 height: 768px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
