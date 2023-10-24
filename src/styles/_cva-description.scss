@@ -11,21 +11,40 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &__text {
             width: 408px;
             color: variables.$textColor;
-            padding-top: 80px;
+            padding-top: 40px;
+
+            @media (max-width: 767px) {
+                width: 352px;
+            }
 
             h3 {
                 font-size: 48px;
                 font-weight: bold;
                 line-height: 56px;
                 letter-spacing: 0.96px;
+
+                @media (max-width: 767px) {
+                    font-size: 40px;
+                    letter-spacing: 0.80px;
+                }
             }
     
             p {
                 line-height: 24px;
                 letter-spacing: 0.32px;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.32px;
+                }
             }
         }
     }
@@ -34,8 +53,18 @@
         display: flex;
         gap: 24px;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         img {
             height: 608px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                height: auto;
+                margin-bottom: 16px;
+            }
         }
     }
 
@@ -43,30 +72,60 @@
         display: flex;
         gap: 184px;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &__text {
             width: 408px;
             color: variables.$textColor;
             padding-top: 160px;
+
+            @media (max-width: 767px) {
+                width: 352px;
+                padding-top: 40px;
+            }
 
             h3 {
                 font-size: 48px;
                 font-weight: bold;
                 line-height: 56px;
                 letter-spacing: 0.96px;
+
+                @media (max-width: 767px) {
+                    font-size: 40px;
+                    letter-spacing: 0.80px;
+                }
             }
     
             p {
                 width: 408px;
                 line-height: 24px;
                 letter-spacing: 0.32px;
+
+                @media (max-width: 767px) {
+                    width: 352px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.32px;
+                }
             }
         }
 
         &__image {
             padding-top: 80px;
 
+            @media (max-width: 767px) {
+                padding-top: 40px;
+            }
+
             img {
                 height: 768px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
