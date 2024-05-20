@@ -24,5 +24,15 @@
 * {
     font-family: PP Mori, sans-serif;
     list-style: none;
+}
+
+body {
     background-color: variables.$backgroundColor;
+
+    @media (max-width: 1024px) {
+        background-image: url(/src/images/frame_mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
 }
