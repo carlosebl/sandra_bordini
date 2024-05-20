@@ -1,0 +1,119 @@
+@use 'variables';
+
+.rech-description {
+    padding-top: 120px;
+    overflow-x: hidden;
+
+    @media (max-width: 1024px) {
+        padding-top: 40px;
+    }
+
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        gap: 240px;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__text {
+        color: variables.$textColor;
+
+        h3 {
+            width: 408px;
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 40px;
+            letter-spacing: 0.64px;
+
+            @media (max-width: 1024px) {
+                width: 352px;
+                font-size: 32px;
+                letter-spacing: 0.64px;
+            }
+        }
+
+        p {
+            max-width: 408px;
+            height: 216px;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: 0.36px;
+
+            @media (max-width: 1024px) {
+                width: 352px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__image {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    &__process {
+        margin-top: 120px;
+        display: flex;
+
+        @media (max-width: 1024px) {
+            display: block;
+            margin-top: 40px;
+        }
+
+        &__text {
+            color: variables.$textColor;
+            margin-right: 120px;
+
+            @media (max-width: 1024px) {
+                width: 352px;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+                letter-spacing: 0.64px;
+
+                @media (max-width: 1024px) {
+                    font-size: 32px;
+                }
+            }
+    
+            &__texts {
+                display: flex;
+
+                @media (max-width: 1024px) {
+                    display: block;
+                }
+
+                p {
+                    width: 400px;
+                    font-size: 18px;
+                    line-height: 40px;
+                    letter-spacing: 0.36px;
+                    margin-right: 24px;
+    
+                    @media (max-width: 1024px) {
+                        width: 352px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            @media (max-width: 1024px) {
+                padding-top: 40px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

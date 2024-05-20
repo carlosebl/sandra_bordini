@@ -49,10 +49,12 @@
                 display: block;
                 border: 1px solid variables.$textColor;
                 border-radius: 4px;
+                height: 500px;
 
                 @media (max-width: 1024px) {
                     border: none;
                     margin-top: 40px;
+                    height: auto;
                 }
     
                 img {
@@ -87,9 +89,9 @@
                         margin: 0;
                         background-color: variables.$textColor;
                         color: variables.$cardTextColor;
-                        font-size: 20px;
-                        line-height: 32px;
-                        letter-spacing: 0.40px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0.36px;
 
                         @media (max-width: 1024px) {
                             font-size: 16px;

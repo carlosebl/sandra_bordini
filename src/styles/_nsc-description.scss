@@ -1,0 +1,146 @@
+@use 'variables';
+
+.nsc-description {
+
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 132px;
+
+        @media (max-width: 1024px) {
+            display: block;
+            padding-top: 2px;
+        }
+    }
+
+    &__container {
+        color: variables.$textColor;
+
+        @media (max-width: 1024px) {
+            width: 352px;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 120px;
+
+            @media (max-width: 1024px) {
+                display: block;
+                padding-bottom: 16px;
+            }
+
+            &__text {
+                width: 412px;
+                margin-right: 120px;
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                }
+    
+                h3 {
+                    font-size: 32px;
+                    font-weight: normal;
+                    line-height: 40px;
+                    letter-spacing: 0.64px;
+                    margin-bottom: 16px;
+    
+                    @media (max-width: 1024px) {
+                        font-size: 32px;
+                        letter-spacing: 0.64px;
+                    }
+                }
+        
+                p {
+                    font-size: 18px;
+                    line-height: 40px;
+                    letter-spacing: 0.36px;
+                }
+
+                &--desafio {
+                    width: 638px;
+                    margin-top: 120px;
+                    margin-left: 108px;
+
+                    @media (max-width: 1024px) {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+
+                    h3 {
+                        font-size: 32px;
+                        font-weight: normal;
+                        line-height: 40px;
+                        letter-spacing: 0.64px;
+                        margin-bottom: 16px;
+        
+                        @media (max-width: 1024px) {
+                            font-size: 32px;
+                            letter-spacing: 0.64px;
+                        }
+                    }
+            
+                    p {
+                        font-size: 18px;
+                        line-height: 40px;
+                        letter-spacing: 0.36px;
+                    }
+                }
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            &__images {
+                display: flex;
+                justify-content: flex-end;
+                height: 400px;
+                gap: 24px;
+                margin-top: 120px;
+
+                @media (max-width: 1024px) {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    margin-top: 40px;
+                }
+
+                &__image {
+                    border-radius: 4px;
+
+                    @media (max-width: 1024px) {
+                        max-width: 100%;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+
+            &__process {
+
+                &__text {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 240px;
+
+                    @media (max-width: 1024px) {
+                        display: block;
+                    }
+
+                    p {
+                        width: 412px;
+                        font-size: 18px;
+                        line-height: 40px;
+                        letter-spacing: 0.36px;
+
+                        @media (max-width: 1024px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
