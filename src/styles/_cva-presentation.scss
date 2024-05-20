@@ -2,7 +2,6 @@
 
 .cva-presentation {
     padding-top: 96px;
-    overflow-x: hidden;
 
     @media (max-width: 1024px) {
         padding-top: 40px;
@@ -19,7 +18,7 @@
     }
 
     &__content {
-        width: 408px;
+        width: 520px;
         color: variables.$textColor;
 
         @media (max-width: 1024px) {
@@ -27,9 +26,9 @@
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 24px;
-            letter-spacing: 0.32px;
+            letter-spacing: 0.28px;
 
             @media (max-width: 1024px) {
                 font-size: 12px;
@@ -43,17 +42,49 @@
         }
 
         h3 {
-            width: 408px;
-            font-size: 48px;
-            font-weight: bold;
+            font-size: 40px;
+            font-weight: normal;
             line-height: 56px;
-            letter-spacing: 0.96px;
+            letter-spacing: 0.8px;
 
             @media (max-width: 1024px) {
                 width: 352px;
                 font-size: 40px;
                 font-weight: bold;
                 letter-spacing: 0.80px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: .36px;
+        }
+
+        &__info {
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &__text {
+                display: flex;
+                align-items: center;
+                margin-top: 12px;
+
+                h4 {
+                    width: 70px;
+                    opacity: .4;
+                    font-size: 14px;
+                    font-weight: normal;
+                    letter-spacing: 0.28px;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: normal;
+                    letter-spacing: 0.28px;
+                    margin: 0 16px;
+                }
             }
         }
     }
@@ -66,7 +97,8 @@
         }
 
         img {
-            height: 720px;
+            height: 100%;
+            max-width: 100%;
 
             @media (max-width: 1024px) {
                 width: 100%;

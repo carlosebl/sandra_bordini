@@ -18,7 +18,7 @@
     &__tags {
         display: flex;
         flex-wrap: wrap;
-        width: 624px;
+        width: 650px;
         max-width: 100%;
         height: 192px;
 
@@ -26,16 +26,17 @@
             display: flex;
             align-items: center;
             height: 48px;
-            padding: 4px 16px;
+            padding: 4px 12px;
             margin-right: 24px;
             background-color: variables.$tagColor;
-            border-radius: 10px;
+            border-radius: 4px;
 
             @media (max-width: 1024px) {
                 height: 32px;
                 padding: 4px 12px;
                 margin-right: 16px;
-                border-radius: 5px;
+                margin-bottom: 16px;
+                border-radius: 4px;
             }
 
             h4 {
@@ -43,7 +44,7 @@
                 margin: 0;
                 background-color: variables.$tagColor;
                 color: variables.$textColor;
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: bold;
                 text-transform: uppercase;
                 letter-spacing: 0.48px;
@@ -58,7 +59,7 @@
     }
 
     &__contact {
-        padding-left: 240px;
+        padding-left: 200px;
         margin: 0;
 
         @media (max-width: 1024px) {

@@ -1,7 +1,12 @@
 @use 'variables';
 
 .cva-description {
-    overflow-x: hidden;
+    padding-top: 124px;
+
+    @media (max-width: 1024px) {
+        padding-top: 40px;
+    }
+
     .container {
         max-width: 1280px;
         width: 100%;
@@ -25,20 +30,21 @@
             }
 
             h3 {
-                font-size: 48px;
-                font-weight: bold;
-                line-height: 56px;
-                letter-spacing: 0.96px;
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+                letter-spacing: 0.64px;
 
                 @media (max-width: 1024px) {
-                    font-size: 40px;
-                    letter-spacing: 0.80px;
+                    font-size: 32px;
+                    letter-spacing: 0.64px;
                 }
             }
     
             p {
-                line-height: 24px;
-                letter-spacing: 0.32px;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 0.36px;
             }
         }
     }
@@ -52,7 +58,7 @@
         }
 
         img {
-            height: 608px;
+            width: 100%;
 
             @media (max-width: 1024px) {
                 width: 100%;
@@ -81,21 +87,22 @@
             }
 
             h3 {
-                font-size: 48px;
-                font-weight: bold;
-                line-height: 56px;
-                letter-spacing: 0.96px;
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+                letter-spacing: 0.64px;
 
                 @media (max-width: 1024px) {
-                    font-size: 40px;
-                    letter-spacing: 0.80px;
+                    font-size: 32px;
+                    letter-spacing: 0.64px;
                 }
             }
     
             p {
                 width: 408px;
-                line-height: 24px;
-                letter-spacing: 0.32px;
+                line-height: 18px;
+                line-height: 40px;
+                letter-spacing: 0.36px;
 
                 @media (max-width: 1024px) {
                     width: 352px;
@@ -111,7 +118,7 @@
             }
 
             img {
-                height: 768px;
+                width: 100%;
 
                 @media (max-width: 1024px) {
                     width: 100%;

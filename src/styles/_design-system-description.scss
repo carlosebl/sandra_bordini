@@ -1,7 +1,7 @@
 @use 'variables';
 
 .design-system-description {
-    padding-top: 80px;
+    padding-top: 120px;
     overflow-x: hidden;
 
     @media (max-width: 1024px) {
@@ -24,73 +24,72 @@
 
         h3 {
             width: 408px;
-            font-size: 48px;
-            font-weight: bold;
-            line-height: 56px;
-            letter-spacing: 0.96px;
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 40px;
+            letter-spacing: 0.64px;
 
             @media (max-width: 1024px) {
                 width: 352px;
-                font-size: 40px;
-                letter-spacing: 0.80px;
+                font-size: 32px;
+                letter-spacing: 0.64px;
             }
         }
 
         p {
             max-width: 408px;
             height: 216px;
-            line-height: 24px;
-            letter-spacing: 0.32px;
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: 0.36px;
 
             @media (max-width: 1024px) {
                 width: 352px;
+                margin-bottom: 40px;
             }
         }
     }
 
     &__image {
-        margin-left: 112px;
-
-        @media (max-width: 1024px) {
-            margin: 0;
-            width: 100%;
-        }
+        margin-top: 40px;
+        width: 100%;
     }
 
     &__process {
+        margin-top: 120px;
         display: flex;
-        gap: 184px;
 
         @media (max-width: 1024px) {
             display: block;
+            margin-top: 40px;
         }
 
         &__text {
             width: 408px;
             color: variables.$textColor;
-            padding-top: 80px;
+            margin-right: 120px;
 
             @media (max-width: 1024px) {
                 width: 352px;
-                padding-top: 40px;
+                margin: 0;
             }
 
             h3 {
-                font-size: 48px;
-                font-weight: bold;
-                line-height: 56px;
-                letter-spacing: 0.96px;
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+                letter-spacing: 0.64px;
 
                 @media (max-width: 1024px) {
-                    font-size: 40px;
-                    letter-spacing: 0.80px;
+                    font-size: 32px;
                 }
             }
     
             p {
                 width: 408px;
-                line-height: 24px;
-                letter-spacing: 0.32px;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 0.36px;
 
                 @media (max-width: 1024px) {
                     width: 352px;
@@ -99,19 +98,12 @@
         }
 
         &__image {
-            padding-top: 80px;
-
             @media (max-width: 1024px) {
-                padding-top: 80px;
+                padding-top: 40px;
             }
 
             img {
-                height: 768px;
-
-                @media (max-width: 1024px) {
-                    width: 100%;
-                    height: auto;
-                }
+                width: 100%;
             }
         }
     }
